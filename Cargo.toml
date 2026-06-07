@@ -1,0 +1,8 @@
+[package]
+name = "spectral-prosody-rs"
+version = "0.1.0"
+edition = "2021"
+description = "Spectral analysis of prosodic features in agent communication"
+license = "MIT"
+
+[dependencies]
