@@ -1,0 +1,80 @@
+[crate]
+name = "spectral-prosody-rs"
+version = "0.1.0"
+edition = "2021"
+description = "Spectral analysis of prosodic features in agent communication"
+license = "MIT"
+repository = "https://github.com/SuperInstance/spectral-prosody-rs"
+language = "rust"
+test_count = 50
+
+[provides]
+capabilities = [
+    "pitch-contour-extraction",
+    "pitch-statistics",
+    "pitch-semitone-conversion",
+    "pitch-voicing-detection",
+    "pitch-jitter-measurement",
+    "energy-envelope-tracking",
+    "energy-db-conversion",
+    "energy-rms-computation",
+    "energy-dynamic-range",
+    "energy-peak-detection",
+    "energy-smoothing",
+    "energy-slope-analysis",
+    "energy-normalization",
+    "rhythm-detection",
+    "rhythm-tempo-extraction",
+    "rhythm-autocorrelation",
+    "rhythm-inter-onset-intervals",
+    "rhythm-regularity-measure",
+    "rhythm-spectral-flux",
+    "rhythm-dominant-frequency",
+    "rhythm-feature-vector",
+    "power-spectrum",
+    "discrete-cosine-transform",
+    "mel-filter-bank",
+    "mfcc-computation",
+    "mfcc-delta-features",
+    "mfcc-delta-delta-features",
+    "prosodic-feature-extraction",
+]
+
+[requires]
+dependencies = []
+
+[exports]
+modules = ["energy", "pitch", "rhythm", "spectral_features"]
+structs = [
+    "EnergyEnvelope",
+    "PitchContour",
+    "RhythmicPattern",
+    "MelFilterBank",
+    "ProsodicFeatures",
+]
+functions = [
+    "frame_energy",
+    "frame_rms",
+    "extract_energy_envelope",
+    "smooth_energy",
+    "detect_peaks",
+    "energy_slope",
+    "normalize_energy",
+    "autocorrelation_pitch",
+    "extract_pitch_contour",
+    "pitch_slope",
+    "smooth_contour",
+    "autocorrelation",
+    "detect_rhythm",
+    "detect_tempo",
+    "inter_onset_intervals",
+    "rhythmic_regularity",
+    "spectral_flux",
+    "rhythmic_spectrum",
+    "dominant_rhythm_frequency",
+    "rhythmic_feature_vector",
+    "dct",
+    "power_spectrum",
+    "compute_mfcc",
+    "delta",
+]
